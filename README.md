@@ -66,16 +66,6 @@ Use
 to generate your backend code. Using this template will make it easier to deploy
 your backend later on.
 
-## Strategy, Timeline, and Tips
-
-### Planning
-
-- Plan out your features
-- Develop user stories
-  - “As [ a user ], I want [ to perform this action ] so that [ I can accomplish this goal ].”
-  - Features should not need you there to explain them to users
-- Plan out the structure of your resource(s) within the `db/seeds.json` file
-
 ## Deploying
 
 When your project is complete, you are encouraged to deploy it! You'll need to
