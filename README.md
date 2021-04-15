@@ -39,7 +39,7 @@ the basic requirements — you're free to add on as much stuff as you'd like.
 
 Some ideas for stretch goals:
 
-- Incorporate data from an external API. User
+- Incorporate data from an external API. Use
   [this list of APIs](https://apilist.fun/) if you need some inspiration!
 - Add some styling: you're encouraged to write your CSS from scratch, either by
   using [styled-components](https://styled-components.com/) or writing CSS files
