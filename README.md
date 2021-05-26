@@ -1,12 +1,11 @@
 # Phase 2 React Project
 
-## Objectives
+## Learning Goals
 
-1. Build a React single page application from scratch
-2. Apply your knowledge of components, props and state management
-3. Incorporate client-side routing
-4. Use data from external APIs
-5. Persist data in a mock up backend
+- Build a React single page application from scratch
+- Apply your knowledge of components, props and state management
+- Incorporate client-side routing
+- Use data from an API
 
 ## Introduction
 
@@ -18,19 +17,14 @@ whatever you'd like, as long as it incorporates the requirements listed in these
 
 ## Requirements
 
-### Frontend Requirements
-
 1. You must make a single page application (only one `index.html` file) using
    `create-react-app`
 2. Your app should use multiple components in a way that keeps your code well
    organized
 3. There should be multiple client-side routes using
    [react-router](https://reactrouter.com/web/guides/quick-start)
-
-### Backend Requirements
-
-1. You should use `json-server` to create a RESTful API for your backend
-2. You must have full CRUD on at least one resource
+4. You can use `json-server` to create a RESTful API for your backend, or
+   incorporate data from an external API
 
 ### Stretch Goals
 
@@ -61,7 +55,7 @@ the instructions on this site to get started: [create-react-app](https://create-
 
 ### Backend Setup
 
-Use
+If you're using `json-server` for your API, you can use
 [this json-server template](https://github.com/learn-co-curriculum/json-server-template)
 to generate your backend code. Using this template will make it easier to deploy
 your backend later on.
@@ -71,8 +65,8 @@ your backend later on.
 When your project is complete, you are encouraged to deploy it! You'll need to
 deploy your frontend and backend repos to their own standalone servers.
 
-For your backend, you will need a service capable of running a Node.js server.
-We recommend using
+For your backend, if you are using `json-server`, you will need a service
+capable of running a Node.js server. We recommend using
 [Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
 
 For your frontend, we recommend using
