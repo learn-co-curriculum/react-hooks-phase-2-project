@@ -23,8 +23,7 @@ whatever you'd like, as long as it incorporates the requirements listed in these
    organized
 3. There should be multiple client-side routes using
    [react-router](https://reactrouter.com/web/guides/quick-start)
-4. You can use `json-server` to create a RESTful API for your backend, or
-   incorporate data from an external API
+4. Use a `json-server` to create a RESTful API for your backend and make both a `GET` and a `POST` request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required. 
 
 ### Stretch Goals
 
