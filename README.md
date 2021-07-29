@@ -19,11 +19,14 @@ whatever you'd like, as long as it incorporates the requirements listed in these
 
 1. You must make a single page application (only one `index.html` file) using
    `create-react-app`
-2. Your app should use multiple components in a way that keeps your code well
+2. Your app should use at least 5 components in a way that keeps your code well
    organized
-3. There should be multiple client-side routes using
+3. There should be at least 3 client-side routes using
    [react-router](https://reactrouter.com/web/guides/quick-start)
-4. Use a `json-server` to create a RESTful API for your backend and make both a `GET` and a `POST` request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required. 
+4. Use a `json-server` to create a RESTful API for your backend and make both a `GET` and a `POST` request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required.
+   - You should keep your `json-server` data simple: avoid nested data and
+     associations. You'll learn how to work with more complex data in the next
+     two phases. Focus on the frontend for this project.
 
 ### Stretch Goals
 
@@ -50,14 +53,59 @@ should you choose to do so.
 ### Frontend Setup
 
 Use `create-react-app` to generate starter code for your your project. Follow
-the instructions on this site to get started: [create-react-app](https://create-react-app.dev/docs/getting-started)
+the instructions on the [create-react-app] site to get started.
+
+[create-react-app]: https://create-react-app.dev/docs/getting-started
 
 ### Backend Setup
 
-If you're using `json-server` for your API, you can use
-[this json-server template](https://github.com/learn-co-curriculum/json-server-template)
-to generate your backend code. Using this template will make it easier to deploy
-your backend later on.
+You can use this [json-server template][] to generate your backend code. Using
+this template will make it easier to deploy your backend later on.
+
+[json-server template]: https://github.com/learn-co-curriculum/json-server-template
+
+If you prefer, instead of using the template, you can create a `db.json` file
+with a structure in the root of your project that looks like this:
+
+```json
+{
+  "toys": [
+    {
+      "id": 1,
+      "name": "Woody",
+      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+      "likes": 8
+    },
+    {
+      "id": 2,
+      "name": "Buzz Lightyear",
+      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
+      "likes": 14
+    }
+  ]
+}
+```
+
+Then, assuming you have `json-server` installed globally, you can run this
+command to run the server:
+
+```sh
+json-server --watch db.json
+```
+
+Whatever top-level keys exist in your `db.json` file will determine the routes
+available. In the example above, since we have a key of `toys` pointing to an
+array of toy objects, `json-server` will generate the following routes:
+
+- `GET /toys`
+- `POST /toys`
+- `GET /toys/:id`
+- `PATCH /toys/:id`
+- `DELETE /toys/:id`
+
+You can consult the [json-server docs][] for more information.
+
+[json-server docs]: https://www.npmjs.com/package/json-server
 
 ## Deploying
 
