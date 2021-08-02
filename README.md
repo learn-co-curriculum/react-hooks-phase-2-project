@@ -1,4 +1,4 @@
-# Phase 2 React Project
+# Phase 2 Project Guidelines
 
 ## Learning Goals
 
