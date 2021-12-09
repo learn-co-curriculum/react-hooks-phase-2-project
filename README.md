@@ -12,8 +12,9 @@
 Now that you've learned the fundamentals of React, it's time to practice and
 expand your skills by making a React project from scratch!
 
-This assignment is open-ended when it comes to the actual content. You are free to create
-whatever you'd like, as long as it incorporates the requirements listed in these instructions.
+This assignment is open-ended when it comes to the actual content. You are free
+to create whatever you'd like, as long as it incorporates the requirements
+listed in these instructions.
 
 ## Requirements
 
@@ -23,7 +24,9 @@ whatever you'd like, as long as it incorporates the requirements listed in these
    organized
 3. There should be at least 3 client-side routes using
    [react-router](https://reactrouter.com/web/guides/quick-start)
-4. Use a `json-server` to create a RESTful API for your backend and make both a `GET` and a `POST` request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required.
+4. Use a `json-server` to create a RESTful API for your backend and make both a
+   `GET` and a `POST` request to the json server. Additionally, you may choose
+   to incorporate data from an external API but it is not required.
    - You should keep your `json-server` data simple: avoid nested data and
      associations. You'll learn how to work with more complex data in the next
      two phases. Focus on the frontend for this project.
