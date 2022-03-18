@@ -19,33 +19,31 @@ listed in these instructions.
 ## Requirements
 
 1. You must make a single page application (only one `index.html` file) using
-   `create-react-app`
+   `create-react-app`.
 2. Your app should use at least 5 components in a way that keeps your code well
-   organized
-3. There should be at least 3 client-side routes using
-   [react-router](https://reactrouter.com/web/guides/quick-start)
+   organized.
+3. There should be at least 3 client-side routes using [React
+   Router][react-router]. Be sure to include a nav bar or other UI element that
+   allows users to navigate between routes.
 4. Use a `json-server` to create a RESTful API for your backend and make both a
-   `GET` and a `POST` request to the json server. Additionally, you may choose
-   to incorporate data from an external API but it is not required.
+   `GET` and a `POST` request to the json server. Use a form to make your post
+   request, specifically a controlled form/component. Additionally, you may
+   choose to incorporate data from an external API but it is not required.
    - You should keep your `json-server` data simple: avoid nested data and
      associations. You'll learn how to work with more complex data in the next
      two phases. Focus on the frontend for this project.
+5. Add some styling: you're encouraged to write your CSS from scratch, either by
+   using [styled components][] or writing CSS files and using id/className to
+   style your elements. You can also incorporate a UI framework (like [React
+   Bootstrap][react-bootstrap], [Semantic UI][semantic-ui], or [Material
+   UI][material-ui]) if you prefer.
 
 ### Stretch Goals
 
 Once you have met the minimum requirements, feel free to explore! These are only
-the basic requirements — you're free to add on as much stuff as you'd like.
-
-Some ideas for stretch goals:
-
-- Incorporate data from an external API. Use
-  [this list of APIs](https://apilist.fun/) if you need some inspiration!
-- Add some styling: you're encouraged to write your CSS from scratch, either by
-  using [styled-components](https://styled-components.com/) or writing CSS files
-  and using id/className to style your elements. You can also incorporate a UI
-  framework (like [react-bootstrap](https://react-bootstrap.github.io/),
-  [semantic-ui](https://react.semantic-ui.com/)
-  [material-ui](https://material-ui.com/)) if you prefer.
+the basic requirements — you're free to add on as much stuff as you'd like. For
+example, you may want to incorporate data from an external API. Check out [this
+list of APIs][APIs] if you need some inspiration!
 
 ## Setup
 
@@ -217,3 +215,10 @@ works by connecting your Git repository with Netlify's build process. Then, any
 time you push up changes to your main branch, your deployed site will
 automatically update! This makes it very easy to add features even after you've
 deployed.
+
+[react-router]: https://reactrouter.com/web/guides/quick-start
+[APIs]: https://apilist.fun/
+[styled components]: https://styled-components.com/
+[react-bootstrap]: https://react-bootstrap.github.io/
+[semantic-ui]: https://react.semantic-ui.com/
+[material-ui]: https://material-ui.com/
