@@ -53,8 +53,8 @@ should you choose to do so.
 
 ### Frontend Setup
 
-Use `create-react-app` to generate starter code for your your project. Follow
-the instructions on the [create-react-app] site to get started.
+Use `create-react-app` to generate starter code for your project. Follow the
+instructions on the [create-react-app] site to get started.
 
 [create-react-app]: https://create-react-app.dev/docs/getting-started
 
@@ -66,7 +66,7 @@ this template will make it easier to deploy your backend later on.
 [json-server template]: https://github.com/learn-co-curriculum/json-server-template
 
 If you prefer, instead of using the template, you can create a `db.json` file
-with a structure in the root of your project that looks like this:
+in the root of your project with a structure that looks like this:
 
 ```json
 {
@@ -130,7 +130,7 @@ specified here:
 
 - [Netlify Redirects](https://docs.netlify.com/routing/redirects/)
 
-Your redirects file should be placed in the public folder. It look like this:
+Your redirects file should be placed in the public folder. It looks like this:
 
 ```txt
 /*    /index.html   200
@@ -149,7 +149,7 @@ You'll likely have some variables that change depending on what environment
 you're working in. For example, after deploying your site to production, you
 won't be able to access your backend on `localhost` anymore.
 
-To handle these kind of **environment variables**, we can use `.env` files.
+To handle these kinds of **environment variables**, we can use `.env` files.
 
 `create-react-app` has some tools for working with `.env` files that you can
 read about here:
@@ -200,7 +200,7 @@ CSS, and other assets from the `src` directory and optimize them by **bundling**
 (merging files together) and **minifying** (shortening the lines of code) so
 that the files load as fast as possible.
 
-![webpack bundle](https://hackernoon.com/hn-images/1*0V9PsiedHEzXJRlouOazZA.gif)
+![webpack bundle](https://curriculum-content.s3.amazonaws.com/phase-2/project-guidelines/webpack-bundle.gif)
 
 You can try this out on your own by running `npm run build`. This will create a
 new directory with your bundled and minified source code!
