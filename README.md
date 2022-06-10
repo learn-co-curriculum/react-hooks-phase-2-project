@@ -47,8 +47,7 @@ list of APIs][APIs] if you need some inspiration!
 
 ## Setup
 
-For this project, you will need two separate repositories: one for your frontend
-and one for your backend. This will make it easier to deploy your project later,
+For this project, you will need one repository: one for your frontend. This will make it easier to deploy your project later,
 should you choose to do so.
 
 ### Frontend Setup
