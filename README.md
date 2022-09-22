@@ -46,6 +46,13 @@ listed in these instructions.
    - Upon return of json from your POST request, a state update by a setState
      function is required! 
      ```
+
+     // in App:
+     function addMovie(newMovie){
+      setMovies([...movies, newMovie]) // Updating movies state.
+     }
+
+     //in Form
      const configObj = {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
@@ -54,7 +61,8 @@ listed in these instructions.
 
      fetch('http://localhost:3000/movies', configObj)
       .then(res => res.json())
-      .then(data => setState(...state, data)) //THIS STATE UPDATE IS REQUIRED!!!
+      .then(data => addMovie(data)) //THIS STATE UPDATE IS REQUIRED!!!
+      // clear form
 
      ```
      Do NOT rely solely on the useEffect of another component to load your new data
