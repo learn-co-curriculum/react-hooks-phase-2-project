@@ -66,7 +66,7 @@ listed in these instructions.
 
      ```
      Do NOT rely solely on the useEffect of another component to load your new data
-     with that fetch request. 
+     with another GET fetch request. 
 5. Add some styling: you're encouraged to write your CSS from scratch, either by
    using [styled components][] or writing CSS files and using id/className to
    style your elements. You can also incorporate a UI framework (like [React
