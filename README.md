@@ -24,7 +24,7 @@ listed in these instructions.
    organized.
 3. There should be at least 3 client-side routes using [React
    Router][react-router]. Be sure to include a nav bar or other UI element that
-   allows users to navigate between routes. Use RESTful routing convention where
+   allows users to navigate between routes. Use RESTful routing conventions where
    applicable. 
     | Route Name | URL | HTTP Verb | Description |
     | ---------- | ---------- | ---------- | ---------- |
@@ -65,8 +65,9 @@ listed in these instructions.
       // clear form
 
      ```
-     Do NOT rely solely on the useEffect of another component to load your new data
-     with another GET fetch request. 
+     Remember: responsibility for re-rendering the page to display the updated list of movies should 
+     belong to the addMovie function; depending on a subsequent action to load the new data is not 
+     best practice
 5. Add some styling: you're encouraged to write your CSS from scratch, either by
    using [styled components][] or writing CSS files and using id/className to
    style your elements. You can also incorporate a UI framework (like [React
