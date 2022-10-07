@@ -25,16 +25,16 @@ listed in these instructions.
 3. There should be at least 3 client-side routes using [React
    Router][react-router]. Be sure to include a nav bar or other UI element that
    allows users to navigate between routes. Use RESTful routing conventions where
-   applicable. 
-    | Route Name | URL | HTTP Verb | Description |
-    | ---------- | ---------- | ---------- | ---------- |
-    | Index | /movies | GET | Display all movies |
-    | New | /movies/new | GET | Display new movie form |
-    | Create | /movies | POST | Add new movie to db |
-    | Show | /movies/:id | GET | Display a single movie's info |
-    | Edit | /movies/:id/edit | GET | Display form to update specific movie |
-    | Update | /movies/:id | PUT/PATCH | Update a specific movie |
-    | Destroy | /movies/:id | DELETE | Delete a specific movie |
+   applicable.
+    | Route Name | URL              | HTTP Verb  | Description                           |
+    | ---------- | ---------------- | ---------- | ------------------------------------- |
+    | Index      | /movies          | GET        | Display all movies                    |
+    | New        | /movies/new      | GET        | Display new movie form                |
+    | Create     | /movies          | POST       | Add new movie to db                   |
+    | Show       | /movies/:id      | GET        | Display a single movie's info         |
+    | Edit       | /movies/:id/edit | GET        | Display form to update specific movie |
+    | Update     | /movies/:id      | PUT/PATCH  | Update a specific movie               |
+    | Destroy    | /movies/:id      | DELETE     | Delete a specific movie               |
 
 4. Use a `json-server` to create a RESTful API for your backend and make both a
    `GET` and a `POST` request to the json server. Use a form to make your post
@@ -44,9 +44,9 @@ listed in these instructions.
      associations. You'll learn how to work with more complex data in the next
      two phases. Focus on the frontend for this project.
    - Upon return of json from your POST request, a state update by a setState
-     function is required! 
-     ```
+     function is required!
 
+     ```
      // in App:
      function addMovie(newMovie){
       setMovies([...movies, newMovie]) // Updating movies state.
@@ -65,9 +65,9 @@ listed in these instructions.
       // clear form
 
      ```
-     Remember: responsibility for re-rendering the page to display the updated list of movies should 
-     belong to the addMovie function; depending on a subsequent action to load the new data is not 
-     best practice
+     Remember: responsibility for re-rendering the page to display the updated
+     list of movies should belong to the addMovie function; depending on a
+     subsequent action to load the new data is not best practice.
 5. Add some styling: you're encouraged to write your CSS from scratch, either by
    using [styled components][] or writing CSS files and using id/className to
    style your elements. You can also incorporate a UI framework (like [React
@@ -83,7 +83,8 @@ list of APIs][APIs] if you need some inspiration!
 
 ## Setup
 
-For this project, you will need one repository: one for your frontend. This will make it easier to deploy your project later,
+For this project, you will need two separate repositories: one for your frontend
+and one for your backend. This will make it easier to deploy your project later,
 should you choose to do so.
 
 ### Frontend Setup
