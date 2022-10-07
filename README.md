@@ -26,6 +26,7 @@ listed in these instructions.
    Router][react-router]. Be sure to include a nav bar or other UI element that
    allows users to navigate between routes. Use RESTful routing conventions where
    applicable.
+
     | Route Name | URL              | HTTP Verb  | Description                           |
     | ---------- | ---------------- | ---------- | ------------------------------------- |
     | Index      | /movies          | GET        | Display all movies                    |
