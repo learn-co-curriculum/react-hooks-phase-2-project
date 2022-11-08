@@ -152,7 +152,8 @@ deploy your frontend and backend repos to their own standalone servers.
 
 For your backend, if you are using `json-server`, you will need a service
 capable of running a Node.js server. We recommend using
-[Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
+[Render](https://render.com/). See the [json-server template][] for instructions
+on deploying your backend to Render.
 
 For your frontend, we recommend using
 [Netlify](https://docs.netlify.com/#get-started); however, there are a number of
@@ -205,7 +206,7 @@ REACT_APP_API_URL=http://localhost:4000
 And a `.env.production` file with your deployed backend URL:
 
 ```env
-REACT_APP_API_URL=https://my-awesome-project.herokuapp.com
+REACT_APP_API_URL=https://my-awesome-project.onrender.com
 ```
 
 To use these environment variables in your code, you can access them at
