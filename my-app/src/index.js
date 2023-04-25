@@ -1,15 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router } from "react-router-dom";
-import './index.css';
+ import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router} from 'react-router-dom';
 import App from './components/App';
 
-ReactDOM.render(
+
+
+
+
+ReactDOM.createRoot(
+  document.getElementById("root"),
+)
+.render(
   <Router>
     <App />
   </Router>,
-  document.getElementById("root")
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
