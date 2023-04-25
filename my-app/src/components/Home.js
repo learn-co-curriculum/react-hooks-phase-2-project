@@ -6,7 +6,7 @@ let country = 'US'
 
 function Home(){
  
-    const [topHeadlines, setTopHeadlines] = useState({})
+    const [topHeadlines, setTopHeadlines] = useState([])
 
 
   const baseUrl = `https://newsapi.org/v2/`
@@ -15,8 +15,8 @@ function Home(){
   const fetchTopHeadlines = () => {
       fetch(newsUrl)
       .then(res => res.json())
-      .then(res=>res.articles)
-      .then(setTopHeadlines)
+      .then(response=>response.articles)
+      .then(setTopHeadlines=>topHeadlines)
       .then(console.log(topHeadlines))
       
 
@@ -30,21 +30,21 @@ function Home(){
    
     
        
-     const renderArticles = topHeadlines.map(article => 
+    //  const renderArticles = topHeadlines.map(article => 
      
-           <div >
-           <h3>{article.title}</h3>
-           <figure >
-           <img src={article.urlToImage} alt={article.description}/>
-           <figcaption>{article.description}</figcaption>
-           </figure>
-          <p>{article.content}</p>
-           </div>)
+    //        <div >
+    //        <h3>{article.title}</h3>
+    //        <figure >
+    //        <img src={article.urlToImage} alt={article.description}/>
+    //        <figcaption>{article.description}</figcaption>
+    //        </figure>
+    //       <p>{article.content}</p>
+    //        </div>)
           
   
     
    
-    return (<div>{renderArticles}</div>);
+    return (<div>{/*renderArticles  */}</div>);
 }
 
 
