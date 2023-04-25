@@ -15,16 +15,13 @@ function Home(){
   const fetchTopHeadlines = () => {
       fetch(newsUrl)
       .then(res => res.json())
-      .then(response=>response.articles)
-      .then(setTopHeadlines)
-      .then(console.log(topHeadlines))
-      
-
+      .then(headlinesData=>setTopHeadlines(headlinesData.articles))
+      .catch(error=>console.log(error))
 
    }
-  
+//    console.log(topHeadlines)
 
-    useEffect(fetchTopHeadlines, [newsUrl, topHeadlines]) 
+    useEffect(fetchTopHeadlines, [newsUrl]) 
 
 
    
@@ -32,13 +29,13 @@ function Home(){
        
      const renderArticles = topHeadlines.map(article => 
      
-           <div style={{paddingTop: 20 , paddingBottom: 20}}>
+           <div style={{ paddingTop: 20 , paddingBottom: 20}}>
            <h3 style={{textAlign: 'center', textJustify: 'center'}}>{article.title}</h3>
            <figure>
            <img src={article.urlToImage} alt={article.description}  style={{ display: 'block', width: 850 , height: 550, marginLeft: 'auto', marginRight: 'auto'}} />
            <figcaption style={{textAlign: 'center', textJustify: 'center', fontSize:'smaller'}}>{article.description}</figcaption>
            </figure>
-           <pre style={{display: 'block', textAlign: 'center', textJustify: 'center', fontSize: 'medium'}}>{article.content}</pre>
+           <pre style={{textAlign: 'center', textJustify: 'center', fontSize: 'medium'}}>{article.content}</pre>
            </div>)
           
   
