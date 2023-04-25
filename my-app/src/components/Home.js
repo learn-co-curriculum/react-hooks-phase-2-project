@@ -30,21 +30,21 @@ function Home(){
    
     
        
-    //  const renderArticles = topHeadlines.map(article => 
+     const renderArticles = topHeadlines.map(article => 
      
-    //        <div >
-    //        <h3>{article.title}</h3>
-    //        <figure >
-    //        <img src={article.urlToImage} alt={article.description}/>
-    //        <figcaption>{article.description}</figcaption>
-    //        </figure>
-    //       <p>{article.content}</p>
-    //        </div>)
+           <div >
+           <h3>{article.title}</h3>
+           <figure >
+           <img src={article.urlToImage} alt={article.description}/>
+           <figcaption>{article.description}</figcaption>
+           </figure>
+          <p>{article.content}</p>
+           </div>)
           
   
     
    
-    return (<div>{/*renderArticles  */}</div>);
+    return (<div>{renderArticles  }</div>);
 }
 
 
