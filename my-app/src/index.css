@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.article-header {
+  text-align: 'center';
+  text-justify: 'center';
+}
+
+.article-image {
+  display: 'block';
+  height: 200px;
+  margin-left: 'auto';
+  margin-right: 'auto';
+  display: inline-block;
+}
+
+.article-caption {
+  text-align: 'center';
+  text-justify: 'center';
+  font-style: italic;
+}
+
+.article-description {
+  text-align: 'left';
+  text-justify: 'center';
+}
+
+.article-info {
+  font-weight: 500
+}
+.article-card {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  min-height: 400px;
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 50px;
+}

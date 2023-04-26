@@ -22,19 +22,33 @@ return ( <div>
         }}>
           Home
         </NavLink>
-        <NavLink  to="/category" exact
+        <NavLink  to="/arts" exact
         style={linkStyles}
         activeStyle={{
           background: "darkblue",
         }}>
-          Category
+          Arts
         </NavLink>
-        <NavLink  to="/source" exact
+        <NavLink  to="/business" exact
         style={linkStyles}
         activeStyle={{
           background: "darkblue",
         }}>
-        Source
+        Business
+        </NavLink>
+        <NavLink  to="/health" exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}>
+          Health
+        </NavLink>
+        <NavLink  to="/world" exact
+        style={linkStyles}
+        activeStyle={{
+          background: "darkblue",
+        }}>
+          World
         </NavLink>
         <NavLink  to="/favorites" exact
         style={linkStyles}
