@@ -24,18 +24,7 @@ listed in these instructions.
    organized.
 3. There should be at least 3 client-side routes using [React
    Router][react-router]. Be sure to include a nav bar or other UI element that
-   allows users to navigate between routes. Use RESTful routing conventions where
-   applicable.
-
-    | Route Name | URL              | HTTP Verb  | Description                           |
-    | ---------- | ---------------- | ---------- | ------------------------------------- |
-    | Index      | /movies          | GET        | Display all movies                    |
-    | New        | /movies/new      | GET        | Display new movie form                |
-    | Create     | /movies          | POST       | Add new movie to db                   |
-    | Show       | /movies/:id      | GET        | Display a single movie's info         |
-    | Edit       | /movies/:id/edit | GET        | Display form to update specific movie |
-    | Update     | /movies/:id      | PUT/PATCH  | Update a specific movie               |
-    | Destroy    | /movies/:id      | DELETE     | Delete a specific movie               |
+   allows users to navigate between routes.              |
 
 4. Use a `json-server` to create a RESTful API for your backend and make both a
    `GET` and a `POST` request to the json server. Use a form to make your post
@@ -47,7 +36,7 @@ listed in these instructions.
    - Upon return of json from your POST request, a state update by a setState
      function is required!
 
-     ```
+     ```JavaScript
      // in App:
      function addMovie(newMovie){
       setMovies([...movies, newMovie]) // Updating movies state.
