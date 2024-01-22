@@ -243,7 +243,7 @@ time you push up changes to your main branch, your deployed site will
 automatically update! This makes it very easy to add features even after you've
 deployed.
 
-[react-router]: https://v5.reactrouter.com/web/guides/quick-start
+[react-router]: https://reactrouter.com/en/main/start/tutorial
 [APIs]: https://apilist.fun/
 [styled components]: https://styled-components.com/
 [react-bootstrap]: https://react-bootstrap.github.io/
